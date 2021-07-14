@@ -13,58 +13,68 @@
 
   gtag('config', 'G-QZL90C4W56');
 </script>
-
+<link rel="stylesheet" href="style.css">
+<!--
+Class 선택자는 순서에 따라서 나중에 있는 선택자로 결과가 나타남.
+ID 선택자는 순서와 무관하게 적용되며 Class 선택자를 ID 선택자가 이김
+태그 선택자는 Class 선택자보다 약함
+왜? ID 선택자 값은 단 한 번만 등장해야 함. ID 핵심은 중복되면 안 된다. 유일무이한 값! 더 구체적인 값이기에 가장 강력함
+구체적인 것의 우선순위를 높임-->
+<!--.saw{
+  color:gray;}-->
 </head>
 
 <body>
-  <h1><a href="index.html">My Favorite Things</a></h1>
-<ul>
-  <li><a href="1.html">Blackchocoland</a></li>
- <li><a href="2.html">Sumikkogurashi</a></li>
-  <li><a href="3.html">K-pop</a></li>
-</ul>
-<h2>K-POP</h2>
+  <h1><a href="index.html">K-POP</a></h1>
+<div id="grid">
+    <ul>
+      <li><a href="1.html" class="saw">Blackchocoland</a></li>
+     <li><a href="2.html" class="saw">Sumikkogurashi</a></li>
+      <li><a href="3.html" class="saw" id="active">K-pop</a></li>
+    </ul>
+    <div id="article">
+    <h2>K-POP</h2>
+    <a href="https://en.wikipedia.org/wiki/K-pop"> Wikipedia </a>
+    K-pop (Korean: 케이팝; RR: keipap), short for Korean popular music, is a genre of music originating in South Korea as part of South Korean culture. It is influenced by styles and genres from around the world, such as pop, experimental, rock, jazz, gospel, hip hop, R&B, reggae, electronic dance, folk, country, and classical on top of its traditional Korean music roots. The more modern form of the genre emerged with the formation of one of the earliest K-pop groups, the boy band Seo Taiji and Boys, in 1992. Their experimentation with different styles and genres of music and integration of foreign musical elements helped reshape and modernize South Korea's contemporary music scene.
 
-<a href="https://en.wikipedia.org/wiki/K-pop"> Wikipedia </a>
-K-pop (Korean: 케이팝; RR: keipap), short for Korean popular music, is a genre of music originating in South Korea as part of South Korean culture. It is influenced by styles and genres from around the world, such as pop, experimental, rock, jazz, gospel, hip hop, R&B, reggae, electronic dance, folk, country, and classical on top of its traditional Korean music roots. The more modern form of the genre emerged with the formation of one of the earliest K-pop groups, the boy band Seo Taiji and Boys, in 1992. Their experimentation with different styles and genres of music and integration of foreign musical elements helped reshape and modernize South Korea's contemporary music scene.
-
-Modern K-pop "idol" culture began with the boy band H.O.T. in 1996, as K-pop grew into a subculture that amassed enormous fandoms of teenagers and young adults. After a slump in early K-pop, from 2003 TVXQ and BoA started a new generation of K-pop idols that broke the music genre into the neighboring Japanese market and continue to popularize K-pop internationally today. With the advent of online social networking services and Korean TV shows, the current spread of K-pop and Korean entertainment, known as the Korean Wave, is seen not only in East Asia and Southeast Asia, but also in Pakistan, Bangladesh, India, Latin America, North Africa, Southern Africa and East Africa, the Middle East and throughout the Western world, gaining a widespread global audience.
+    Modern K-pop "idol" culture began with the boy band H.O.T. in 1996, as K-pop grew into a subculture that amassed enormous fandoms of teenagers and young adults. After a slump in early K-pop, from 2003 TVXQ and BoA started a new generation of K-pop idols that broke the music genre into the neighboring Japanese market and continue to popularize K-pop internationally today. With the advent of online social networking services and Korean TV shows, the current spread of K-pop and Korean entertainment, known as the Korean Wave, is seen not only in East Asia and Southeast Asia, but also in Pakistan, Bangladesh, India, Latin America, North Africa, Southern Africa and East Africa, the Middle East and throughout the Western world, gaining a widespread global audience.
 
 
-K-pop
-<ol>
-  <li>BLACKPINK</li>
-  <li>SHINee</li>
-  <li>aespa</li>
-</ol>
+    K-pop
+    <ol>
+      <li>BLACKPINK</li>
+      <li>SHINee</li>
+      <li>aespa</li>
+    </ol>
 
-<Strong> BLACKPINK </strong>
-  <br><br>
-<img src="blackpink.jpg">
-<br>
-<br>
+    <Strong> BLACKPINK </strong>
+      <br><br>
+    <img src="blackpink.jpg">
+    <br>
+    <br>
 
-<img src="blackpink2.jpg" width="30%">
-<p style="margin-top:30px;">
-<iframe width="1120" height="630" src="https://www.youtube.com/embed/ZvEUerGxmJ0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-<br>
-<br>
-<strong>SHINee</strong>
-<br><br>
-<img src="shinee.jpg">
-<br><br>
-<img src="shinee2.jpg">
-<p style="margin-top:30px;">
-<iframe width="1120" height="630" src="https://www.youtube.com/embed/G_Jw0ZSB_6k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-<br>
-<br>
-<strong>aespa</strong>
-<br><br>
-<img src="aespa.jpg">
-<br><br>
-<img src='aespa2.jpg'>
-<br><br>
-<p style="margin-top:30px;">
-<iframe width="1120" height="630" src="https://www.youtube.com/embed/gWATwmYoE-Q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</body>
+    <img src="blackpink2.jpg" width="30%">
+    <p style="margin-top:30px;">
+    <iframe width="1120" height="630" src="https://www.youtube.com/embed/ZvEUerGxmJ0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <br>
+    <br>
+    <strong>SHINee</strong>
+    <br><br>
+    <img src="shinee.jpg">
+    <br><br>
+    <img src="shinee2.jpg">
+    <p style="margin-top:30px;">
+    <iframe width="1120" height="630" src="https://www.youtube.com/embed/G_Jw0ZSB_6k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <br>
+    <br>
+    <strong>aespa</strong>
+    <br><br>
+    <img src="aespa.jpg">
+    <br><br>
+    <img src='aespa2.jpg'>
+    <br><br>
+    <p style="margin-top:30px;">
+    <iframe width="1120" height="630" src="https://www.youtube.com/embed/gWATwmYoE-Q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  </div>
+</div>
 </html>
